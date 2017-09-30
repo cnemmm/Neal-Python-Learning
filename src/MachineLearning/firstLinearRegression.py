@@ -36,7 +36,7 @@ y = np.array(df['label'])
 X = preprocessing.scale(X)
 
 #Get training / testing sets by using 80/20 rate
-X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.3)
 
 #Use the simplest algorithm (classifier) Support Vector Regression without any parameter
 clf = svm.SVR()
